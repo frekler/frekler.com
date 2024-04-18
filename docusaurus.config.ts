@@ -37,6 +37,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          routeBasePath: "notes",
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -44,6 +45,7 @@ const config: Config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          routeBasePath: "blog",
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -55,22 +57,39 @@ const config: Config = {
   ],
 
   themeConfig: {
+
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      // respectPrefersColorScheme: true,
+    },
+
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Frekler',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/ninja.svg', // logo.svg
       },
       items: [
+        
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Notes',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/music', label: 'Music', position: 'left'},
+        {
+          position: 'right',
+          label: 'About Me',
+          to: '/about-me',
+        },
+
+        {to: '/life', label: 'Life', position: 'right'},
+        {to: '/contact', label: 'Contact', position: 'right'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -82,28 +101,33 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Security',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Blog',
+              to: '/blog',
             },
+            {
+              label: 'Notes',
+              to: '/notes',
+            },
+
           ],
         },
         {
-          title: 'Community',
+          title: 'Music',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Music',
+              href: '/music',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Radio',
+              href: '/music',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'SoundClound',
+              href: 'https://soundcloud.com/frekler',
             },
           ],
         },
@@ -121,7 +145,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Frekler`,
     },
     prism: {
       theme: prismThemes.github,

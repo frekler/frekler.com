@@ -1,0 +1,1 @@
+![Common Ports](common_ports.png)

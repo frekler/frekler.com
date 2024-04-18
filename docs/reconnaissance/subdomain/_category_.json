@@ -1,0 +1,8 @@
+{
+    "label": "Subdomain",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "Subdomain"
+    }
+  }

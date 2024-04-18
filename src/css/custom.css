@@ -5,6 +5,27 @@
  */
 
 /* You can override the default Infima variables here. */
+
+
+
+
+
+
+
+:root {
+  --ifm-color-primary: #ff5757;
+  --ifm-color-primary-dark: #ff3535;
+  --ifm-color-primary-darker: #ff2424;
+  --ifm-color-primary-darkest: #ef0000;
+  --ifm-color-primary-light: #ff7979;
+  --ifm-color-primary-lighter: #ff8a8a;
+  --ifm-color-primary-lightest: #ffbebe;
+  --ifm-background-color: #000000;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* 
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -16,9 +37,10 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
+*/
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+/* [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -27,4 +49,74 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+} */
+
+
+
+
+
+[data-theme='dark'] {
+  --ifm-color-primary: #ff5757;
+  --ifm-color-primary-dark: #ff3535;
+  --ifm-color-primary-darker: #ff2424;
+  --ifm-color-primary-darkest: #ef0000;
+  --ifm-color-primary-light: #ff7979;
+  --ifm-color-primary-lighter: #ff8a8a;
+  --ifm-color-primary-lightest: #ffbebe;
+  --ifm-background-color: #000000;
+
+  body, .navbar, .footer, #__docusaurus {
+    background-color: #000000;
+  }
+  
+  .navbar-sidebar {
+    background-color: rgb(41, 44, 47);
+  }
+
+  
+
+  /* .hero {
+    align-items: center;
+    background-color: var(--ifm-background-color);
+    color: var(--ifm-hero-text-color);
+    display: flex;
+    padding: 4rem 2rem;
+  } */
+  
 }
+
+
+
+[data-theme='light'] {
+  --ifm-color-primary: #ff5757;
+  --ifm-color-primary-dark: #ff3535;
+  --ifm-color-primary-darker: #ff2424;
+  --ifm-color-primary-darkest: #ef0000;
+  --ifm-color-primary-light: #ff7979;
+  --ifm-color-primary-lighter: #ff8a8a;
+  --ifm-color-primary-lightest: #ffbebe;
+  --ifm-background-color: #ffffff;
+
+  /* body, .navbar, .footer {
+    background-color: #ffffff;
+  }
+  
+  .navbar-sidebar {
+    background-color: #ffffff;
+  } */
+
+
+  
+}
+
+/* .hero {
+  align-items: center;
+  /* background-color: var(--ifm-background-color); */
+  /* background-image: url(/img/frekler.jpeg);
+  background-size: auto; 
+  background-repeat:no-repeat; 
+  color: var(--ifm-hero-text-color);
+  display: flex;
+  padding: 4rem 2rem;
+} */
+
